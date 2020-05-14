@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <title>breakpoints</title>
+
+    <style>
+        .span-box span{
+            width: 100px;
+            height: 100px;
+            display: inline-block;
+            margin: 5px;
+        }
+      body {
+  background: tomato;
+}
+@media (min-width: 576px) {
+  body {
+    background: #eee;
+  }
+}
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  body {
+    background: lightgreen;
+  }
+}
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  body {
+    background: cyan;
+  }
+}
+
+/* // Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  body {
+    background: white;
+  }
+}
+
+    </style>
+    
+</head>
+
+<body>
+    <h1>break points</h1>
+
+    <div class="container">
+        <h2>Display utilities( d-{value}, d-{bp}-{value}</h2>
+        <h1 class="bg-dark text-white"> this is block</h1>
+        <h1 class="bg-dark text-white d-inline"> this is inline</h1>
+        <h1 class="bg-dark text-white d-none"> display-none</h1>
+
+        <span class="bg-info text-white">Normal span</span>
+        <span class="bg-info text-white d-block">Block span</span>
+
+        <h1 class="d-none d-sm-block">Hidden on xs</h1>
+        <h1 class="d-none d-md-block">Hidden on xs and sm</h1>
+        <h1 class="d-none d-xl-block">Show on large </h1>
+
+        <div class="container">
+            <h1>Current breakpoint is</h1>
+            <span class="d-inline d-sm-none">XS</span>
+            <span class="d-none d-sm-inline d-md-none">SM</span>
+            <span class="d-none d-md-inline d-lg-none">MD</span>
+            <span class="d-none d-lg-inline d-xl-none">LG</span>
+            <span class="d-none d-xl-inline">XL</span>
+        </div>
+
+        <div class="container span-box">
+            <h3>Borders</h3>
+            <span class="border"></span>
+            <span class="border-top"></span>
+            <span class="border-right border-left"></span>
+
+            <span class="border border-primary"></span>
+            <span class="border-0">.border-0</span>
+
+            <h3>rounded i.e. border radius</h3>
+            <span class="border border-secondary rounded"></span>
+            <span class="border border-secondary rounded-lg"></span>
+            <span class="border border-secondary rounded-circle"></span>
+            <span class="border border-secondary rounded-top"></span>
+            <span class="border border-warning rounded-0"></span>
+        </div>
+
+        <div class="container">
+            <div class="shadow-none p-3 mb-5 bg-light rounded">No shadow {.shadow-none}</div>
+            <div class="shadow-sm p-3 mb-5 bg-white rounded">Small shadow {.shadow-sm}</div>
+            <div class="shadow p-3 mb-5 bg-white rounded">Regular shadow {.shadow}</div>
+            <div class="shadow-lg p-3 mb-5 bg-white rounded">Larger shadow {.shadow-lg}</div>
+        </div>
+
+        <h3>margin and padding</h3>
+        <p>{m/p}{sides}-{bp}-{size}</p>
+    </div>
+  
+</body>
+
+</html>
